@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card'
 import React from 'react'
 import Image from 'next/image'
+import userImg from '@/assets/codin-And-Disability.jpg'
 
 const Welcome = () => {
   return (
@@ -14,7 +15,7 @@ const Welcome = () => {
         </CardContent>
         <CardContent>
         <Image
-            src="https://s3.amazonaws.com/my-bucket/profile.png"
+            src={userImg}
             alt="Picture of the author"
             width={500}
             height={500}

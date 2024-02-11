@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import userImg from '@/assets/codin-And-Disability.jpg'
 
 const Services = () => {
   return (
@@ -11,7 +12,7 @@ const Services = () => {
         <Card>
             <CardContent>
             <Image
-                src="https://s3.amazonaws.com/my-bucket/profile.png"
+                src={userImg}
                 alt="techleap"
                 width={500}
                 height={500}
@@ -28,7 +29,7 @@ const Services = () => {
         <Card>
             <CardContent>
             <Image
-                src="https://s3.amazonaws.com/my-bucket/profile.png"
+                src={userImg}
                 alt="digital boda"
                 width={500}
                 height={500}

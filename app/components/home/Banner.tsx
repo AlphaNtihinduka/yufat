@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import userImg from '@/assets/codin-And-Disability.jpg'
 
 const Banner = () => {
   return (
     <main>
       <div className='imageholder my-2 relative'>
       <Image
-      src="https://s3.amazonaws.com/my-bucket/profile.png"
+      src={userImg}
       alt="banner"
       width={500}
       height={500}
