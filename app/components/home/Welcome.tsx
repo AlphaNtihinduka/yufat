@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card'
 import React from 'react'
+import Image from 'next/image'
 
 const Welcome = () => {
   return (
@@ -12,7 +13,12 @@ const Welcome = () => {
                  the power of technology and actively contribute to the transformation of Africa</p>
         </CardContent>
         <CardContent>
-            <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?q=80&w=1387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="welcome img" />
+        <Image
+            src="https://s3.amazonaws.com/my-bucket/profile.png"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+        />
         </CardContent>
         
     </Card>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const Services = () => {
   return (
@@ -9,7 +10,12 @@ const Services = () => {
         <div className='flex my-3'>
         <Card>
             <CardContent>
-                <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?q=80&w=1387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="digital  boday" />
+            <Image
+                src="https://s3.amazonaws.com/my-bucket/profile.png"
+                alt="techleap"
+                width={500}
+                height={500}
+            />
                 <h3>TechLeap</h3>
                 <p>Educate teh next generation with technological advancement
                     in Microsoft Packages, Internet Usage
@@ -21,7 +27,12 @@ const Services = () => {
         </Card> 
         <Card>
             <CardContent>
-                <img src="https://images.unsplash.com/photo-1455894127589-22f75500213a?q=80&w=1387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="digital  boday" />
+            <Image
+                src="https://s3.amazonaws.com/my-bucket/profile.png"
+                alt="digital boda"
+                width={500}
+                height={500}
+            />
                 <h3>Digital Boda</h3>
                 <p>Educate teh next generation with technological advancement
                     in Microsoft Packages, Internet Usage
