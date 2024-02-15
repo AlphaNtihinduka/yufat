@@ -5,7 +5,7 @@ const Causes = () => {
   return (
     <Card className='bg-transparent flex justify-center flex-col items-center'>
       <h2 className='heading'>What do we do</h2>
-      <p className='text-secondary text-base'>YUFAT empowers the refugees and host youth in community and students in schools with
+      <p className='text-secondary text-base w-4/5'>YUFAT empowers the refugees and host youth in community and students in schools with
         digital skills to promote digtal equality. Refugees in rural areas deserve
         equal access to digital literacy
       </p>

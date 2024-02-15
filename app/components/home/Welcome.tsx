@@ -7,10 +7,9 @@ import computerlab from '@/assets/computerlab.png'
 const Welcome = () => {
   return (
     <Card className='bg-transparent flex justify-center flex-col items-center px-3'>
-        
         <h2 className='heading'>Causes</h2>
         <CardContent className='flex gap-6 justify-center'>
-            <div className='w-2/4 '>
+            <div className='w-2/4'>
             <CardTitle className='text-primary text-xl'>Refugees Lack opportunities</CardTitle> 
             <CardDescription className='text-base'>
                  There are many global opportunities that refugees can equally compete for
@@ -18,6 +17,7 @@ const Welcome = () => {
                  to prepare them for such opportunities.
             </CardDescription>
             </div>
+            <Card className='bg-transparent'>
               <Image
               className='rotate-global'
               src={global}
@@ -25,16 +25,20 @@ const Welcome = () => {
               width={300}
               height={300}
               />
+              </Card>
+              
         </CardContent>
 
         <CardContent className='flex gap-6 justify-center'>
+          <Card className='bg-transparent'>
             <Image
-              className=''
               src={computerlab}
               alt="computer lab"
               width={400}
               height={400}
               />
+              </Card>
+            
             <div className='w-2/4'>
             <CardTitle className='text-primary text-xl'>Refugee schools have no access to computer laboratories</CardTitle> 
             <CardDescription className='text-base text-secondary'>
