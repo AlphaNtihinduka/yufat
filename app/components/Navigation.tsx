@@ -1,26 +1,17 @@
 "use client";
 import React from 'react'
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import Link from 'next/link';
+import Image from 'next/image';
+import yufatlogo from '@/assets/yufat-logo.png';
 
 
 const Navigation = () => {
   return (
-    <main className='flex justify-between items-center py-2'>
+    <main className='navigation flex justify-between items-center py-2'>
       <ul>
         <li>
-          Logo
+          <Image src={yufatlogo} alt='yufatlogo' width={100} height={100} />
         </li>
       </ul>
       
@@ -30,7 +21,7 @@ const Navigation = () => {
         <li><Button><Link href="/contact">Contact</Link> </Button></li>
         <li><Button><Link href="/services">Services</Link> </Button></li>
         <li><Button><Link href="/blog">Blog</Link> </Button></li>
-        <li><Button><Link href="/donate">Donate</Link> </Button></li>
+        <li><Button className='bg-primary hover:bg-[#FF9F24]'><Link href="/donate">Donate</Link> </Button></li>
       </ul>
     </main>  
       
