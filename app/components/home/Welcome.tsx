@@ -6,12 +6,12 @@ import computerlab from '@/assets/computerlab.png'
 
 const Welcome = () => {
   return (
-    <Card className='bg-transparent flex justify-center flex-col items-center px-3'>
+    <Card className='bg-transparent px-0 mx-0 flex justify-center flex-col items-center'>
         <h2 className='heading'>Causes</h2>
-        <CardContent className='flex gap-6 justify-center'>
+        <CardContent className='flex gap-6 justify-between'>
             <div className='w-2/4'>
             <CardTitle className='text-primary text-xl'>Refugees Lack opportunities</CardTitle> 
-            <CardDescription className='text-base'>
+            <CardDescription className='text-base text-secondary'>
                  There are many global opportunities that refugees can equally compete for
                  than here in Uganda. YUFAT equips the refugees with digital skills to
                  to prepare them for such opportunities.
@@ -29,7 +29,7 @@ const Welcome = () => {
               
         </CardContent>
 
-        <CardContent className='flex gap-6 justify-center'>
+        <CardContent className='flex gap-6 justify-between'>
           <Card className='bg-transparent'>
             <Image
               src={computerlab}

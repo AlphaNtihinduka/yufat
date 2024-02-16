@@ -10,7 +10,7 @@ const HomePage = () =>{
   return(
     <main>
       <Banner/>
-      <div className="px-[4%]">
+      <div className="xl:px-[10%]">
       <Welcome/>
       <Causes/>
       <Services/>
